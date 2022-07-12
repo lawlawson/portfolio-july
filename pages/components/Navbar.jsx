@@ -1,6 +1,7 @@
 import Link from 'next/link';
-import React from 'react'
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import React, { useState} from 'react'
+import { AiOutlineClose, AiOutlineGithub, AiOutlineMenu, AiOutlineTwitter } from 'react-icons/ai';
+import { FaLinkedinIn } from 'react-icons/fa';
 
 
 const Navbar = () => {
@@ -33,7 +34,7 @@ const Navbar = () => {
     </div>
 
     <div className='fixed left-0 top-0 w-full h-screen bg-black/70'>
-      <div className='fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration 500'>
+      <div className='fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'>
         <div>
           <div className='flex w-full items-center justify-between'>
           <Link href='/'>Lawrence Narh-Lawson</Link>
@@ -60,6 +61,20 @@ const Navbar = () => {
               <li className='py-4 text-sm'>Contact</li>
             </Link>
           </ul>
+          <div className='pt-40'>
+            <p className='uppercase tracking-widest text-[#5651e5]'>Find me on</p>
+            <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
+              <div className='rounded-full shadow-lg shadow-gray-400 p3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                <FaLinkedinIn />
+              </div>
+              <div className='rounded-full shadow-lg shadow-gray-400 p3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                <AiOutlineTwitter />
+              </div>
+              <div className='rounded-full shadow-lg shadow-gray-400 p3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                <AiOutlineGithub />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
