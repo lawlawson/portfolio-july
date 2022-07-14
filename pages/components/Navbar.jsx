@@ -69,7 +69,7 @@ const Navbar = () => {
             </Link>
           </ul>
           <div className='pt-40'>
-            <p className='uppercase tracking-widest text-[#5651e5]'>Find me on</p>
+            <p className='uppercase tracking-widest text-[#901a1a]'>Find me on</p>
             <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
               <div className='cursor-pointer hover:scale-105 ease-in duration-300'>
                 <FaLinkedinIn />
