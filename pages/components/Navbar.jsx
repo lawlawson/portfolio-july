@@ -71,16 +71,16 @@ const Navbar = () => {
           <div className='pt-40'>
             <p className='uppercase tracking-widest text-[#901a1a]'>Find me on</p>
             <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-              <div className='cursor-pointer hover:scale-105 ease-in duration-300'>
+              <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
                 <FaLinkedinIn />
               </div>
-              <div className='cursor-pointer hover:scale-105 ease-in duration-300'>
+              <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
                 <AiOutlineTwitter />
               </div>
-              <div className='cursor-pointer hover:scale-105 ease-in duration-300'>
+              <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
                 <AiOutlineGithub />
               </div>
-              <div className='cursor-pointer hover:scale-105 ease-in duration-300'>
+              <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
                 <ImBlog />
               </div>
             </div>
