@@ -12,9 +12,11 @@ const Projects = () => {
         </p>
         <h2 className='py-4'>What I&apos;ve Built</h2>
         <div className='grid md:grid-cols-2 gap-8'>
-
-        <ProjectItem />
-
+        <ProjectItem title='Markdown Previewer' backgroundImg={previewImg} projectUrl='/property'/>
+        <ProjectItem title='Markdown Previewer' backgroundImg={previewImg} projectUrl='/property'/>
+        <ProjectItem title='Markdown Previewer' backgroundImg={previewImg} projectUrl='/property'/>
+        <ProjectItem title='Markdown Previewer' backgroundImg={previewImg} projectUrl='/property'/>
+        {/* <ProjectItem title='Todo' backgroundImg={previewImg} projectUrl='/property'/> */}
         </div>
       </div>
     </div>
