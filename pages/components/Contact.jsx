@@ -2,6 +2,7 @@ import React from 'react';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { AiOutlineGithub, AiOutlineTwitter } from 'react-icons/ai';
 import { ImBlog } from 'react-icons/im';
+import Image from 'next/image';
 
 const Contact = () => {
   return (
@@ -14,7 +15,14 @@ const Contact = () => {
         <div className='grid lg:grid-cols-5 gap-8'>
           <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
             <div className='lg:p-4 h-full'>
-              <div>{/* <img className='' src='/' alt='/'/> */}</div>
+              <div>
+                <img
+                  className='rounded-xl hover:scale-105 ease-in duration-300'
+                  src='https://images.unsplash.com/photo-1528747045269-390fe33c19f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
+                  alt='/'
+                  layout='fill'
+                />
+              </div>
               <div>
                 <h2 className='py-2'>Name here</h2>
                 <p>Front-End Developer</p>
