@@ -1,8 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { AiOutlineGithub, AiOutlineTwitter } from 'react-icons/ai';
 import { ImBlog } from 'react-icons/im';
-import Image from 'next/image';
 
 const Contact = () => {
   return (
@@ -93,6 +93,9 @@ const Contact = () => {
                     rows='10'
                   />
                 </div>
+                <button className='w-full p-4 text-gray-100 mt-4'>
+                  Send Message
+                </button>
               </form>
             </div>
           </div>
