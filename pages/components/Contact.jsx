@@ -1,8 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
+import Link from 'next/link';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { AiOutlineGithub, AiOutlineTwitter } from 'react-icons/ai';
 import { ImBlog } from 'react-icons/im';
+import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 
 const Contact = () => {
   return (
@@ -99,6 +101,13 @@ const Contact = () => {
               </form>
             </div>
           </div>
+        </div>
+        <div className='flex justify-center py-12'>
+          <Link href='/'>
+            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover-scale-110 ease-in duration-300'>
+              <HiOutlineChevronDoubleUp className='text-[#901a1a]' size={30} />
+            </div>
+          </Link>
         </div>
       </div>
     </div>
