@@ -17,7 +17,16 @@ const Navbar = () => {
     setNav(!nav);
   };
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+    window.addEventListener('scroll', handleShadow);
+  }, []);
 
   return (
     <div className='fixed w-full h-20 shadow-xl z-[100]'>
