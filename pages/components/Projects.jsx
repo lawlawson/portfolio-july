@@ -15,22 +15,12 @@ const Projects = () => {
           <ProjectItem
             title='Markdown Previewer'
             backgroundImg={previewImg}
-            projectUrl='/property'
+            projectUrl='/previewer'
           />
           <ProjectItem
             title='Markdown Previewer'
             backgroundImg={previewImg}
-            projectUrl='/property'
-          />
-          <ProjectItem
-            title='Markdown Previewer'
-            backgroundImg={previewImg}
-            projectUrl='/property'
-          />
-          <ProjectItem
-            title='Markdown Previewer'
-            backgroundImg={previewImg}
-            projectUrl='/property'
+            projectUrl='/previewer'
           />
           {/* <ProjectItem title='Todo' backgroundImg={previewImg} projectUrl='/property'/> */}
         </div>
