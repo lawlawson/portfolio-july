@@ -8,10 +8,24 @@ import {
 } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { ImBlog } from 'react-icons/im';
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const [navBg, setNavBg] = useState('#ecf0f3');
+  const [linkColor, setLinkColor] = useState('#1f2937');
+  const router = useRouter();
+
+  useEffect(() => {
+    if (router.asPath === '/previewer' || router.asPath === '/todo') {
+      setNavBg('transparent');
+      setLinkColor('#ecf0f3');
+    } else {
+      setNavBg('#ecf0f3');
+      setLinkColor('#1f2937');
+    }
+  }, [router]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -30,6 +44,7 @@ const Navbar = () => {
 
   return (
     <div
+      style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
           ? 'fixed w-full h-20 shadow-xl z-[100]'
@@ -40,7 +55,7 @@ const Navbar = () => {
           <Link href='/'>Lawrence Narh-Lawson</Link>
         </div>
         <div>
-          <ul className='hidden md:flex'>
+          <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
             <Link href='/'>
               <li className='ml-10 text-sm uppercase hover:border-b'>Home</li>
             </Link>
