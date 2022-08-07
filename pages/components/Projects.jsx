@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import previewImg from '../../public/assets/projects/previewImg.png';
+import todoPreview from '../../public/assets/projects/todoPreview.png';
 import ProjectItem from './ProjectItem';
 
 const Projects = () => {
@@ -18,9 +19,9 @@ const Projects = () => {
             projectUrl='/previewer'
           />
           <ProjectItem
-            title='Markdown Previewer'
-            backgroundImg={previewImg}
-            projectUrl='/previewer'
+            title='Todo List'
+            backgroundImg={todoPreview}
+            projectUrl='/todo'
           />
           {/* <ProjectItem title='Todo' backgroundImg={previewImg} projectUrl='/property'/> */}
         </div>
