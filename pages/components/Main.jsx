@@ -9,31 +9,38 @@ const Main = () => {
     <div id='home' className='w-full h-screen text-center'>
       <div className='max-w-[1240px] w-full h-full mx-auto p2 flex justify-center items-center'>
         <div>
-          <h1 className='py-4 text-gray-600'>
+          <h1 className='py-1 text-gray-600'>
             Welcome, I&apos;m <span className='text-[#901a1a]'>Lawrence</span>
           </h1>
-          <h1 className='py-2 text-[#000000]'>Front End Developer</h1>
-          <p className='py-4 text-gray-500 max-w-[70%] m-auto'>
-            Front End Developer specialising in building high quality digital
-            products.
+          <p className='py-1 text-[#000000] text-4xl'>Front-End Developer</p>
+          <p className='py-4 text-gray-700 max-w-[70%] mx-auto my-10 text-2xl'>
+            A passionate&nbsp;
+            <span className='text-[#901a1a]'>
+              &#123; Front-end/Frontend/Front end &#125;
+            </span>
+            &nbsp;web developer who loves to learn about everything related to
+            creating stylish and creative applications that make a positive
+            impact in the world. My goal is to use my skills and knowledge to
+            build web experiences that are not only beautiful, but also
+            accessible and easy to use for everyone.
           </p>
           <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover-scale-110 ease-in duration-300'>
+            <div className='rounded-full shadow-lg shadow-red-700 p-6 cursor-pointer hover-scale-110 ease-in duration-300'>
               <Link href='https://www.linkedin.com/in/lawlawson/'>
                 <FaLinkedinIn />
               </Link>
             </div>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover-scale-110 ease-in duration-300'>
+            <div className='rounded-full shadow-lg shadow-red-800 p-6 cursor-pointer hover-scale-110 ease-in duration-300'>
               <Link href='https://github.com/lawlawson'>
                 <AiOutlineGithub />
               </Link>
             </div>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover-scale-110 ease-in duration-300'>
+            <div className='rounded-full shadow-lg shadow-red-700 p-6 cursor-pointer hover-scale-110 ease-in duration-300'>
               <Link href='https://twitter.com/lawsoncodes'>
                 <AiOutlineTwitter />
               </Link>
             </div>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover-scale-110 ease-in duration-300'>
+            <div className='rounded-full shadow-lg shadow-red-800 p-6 cursor-pointer hover-scale-110 ease-in duration-300'>
               <Link href='https://dev.to/narhlawson'>
                 <ImBlog />
               </Link>

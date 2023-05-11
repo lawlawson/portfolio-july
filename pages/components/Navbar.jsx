@@ -70,11 +70,11 @@ const Navbar = () => {
                 Projects
               </li>
             </Link>
-            <Link href='/#contact'>
+            {/* <Link href='/#contact'>
               <li className='ml-10 text-sm uppercase hover:border-b'>
                 Contact
               </li>
-            </Link>
+            </Link> */}
           </ul>
           <div onClick={handleNav} className='md:hidden'>
             <AiOutlineMenu size={25} />

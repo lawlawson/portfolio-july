@@ -5,11 +5,10 @@ const About = () => {
     <div id='about' className='w-full md:h-screen p-2 flex items-center py-16'>
       <div className='max-w-[1240px] m-auto md:grid grid-cols-1 gap-8'>
         <div className='col-span-2'>
-          <p className='uppercase text-xl tracking-widest text-[#901a1a]'>
-            About
+          <p className='uppercase text-3xl tracking-widest text-[#901a1a]'>
+            About Me
           </p>
-          <h2 className='py-4'>Who I Am</h2>
-          <p className='py-2 text-gray-600 text-2xl'>
+          <p className='py-4 text-gray-600 text-xl'>
             I am a Front End Developer specialising in building high impact
             digital products. I have over 2+ years working as a developer, in
             addition to working within the Tech industry for 5+ years. I have a
