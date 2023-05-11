@@ -18,12 +18,12 @@ export default function Home() {
         />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Navbar />
+      {/* <Navbar /> */}
       <Main />
       <About />
       {/* <ProjectItem /> */}
-      <Skills />
-      <Projects />
+      {/* <Skills /> */}
+      {/* <Projects /> */}
       {/* <Contact /> */}
     </div>
   );

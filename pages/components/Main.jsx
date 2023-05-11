@@ -7,7 +7,7 @@ import Link from 'next/link';
 const Main = () => {
   return (
     <div id='home' className='w-full h-screen text-center'>
-      <div className='max-w-[1240px] w-full h-full mx-auto p2 flex justify-center items-center'>
+      <div className='max-w-[1240px] w-full h-full m-auto p2 flex justify-center items-center'>
         <div>
           <h1 className='py-1 text-gray-600'>
             Welcome, I&apos;m <span className='text-[#901a1a]'>Lawrence</span>
