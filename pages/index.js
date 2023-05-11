@@ -20,7 +20,7 @@ export default function Home() {
       </Head>
       {/* <Navbar /> */}
       <Main />
-      <About />
+      {/* <About /> */}
       {/* <ProjectItem /> */}
       {/* <Skills /> */}
       {/* <Projects /> */}
