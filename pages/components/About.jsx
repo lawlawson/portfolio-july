@@ -8,23 +8,29 @@ const About = () => {
           <p className='uppercase text-3xl tracking-widest text-[#901a1a]'>
             About Me
           </p>
-          <p className='py-4 text-gray-600 text-xl'>
+          <p className='py-4 text-gray-600 text-xl max-w-[70%]'>
             I am a Front End Developer specialising in building high impact
-            digital products. I have over 2+ years working as a developer, in
-            addition to working within the Tech industry for 5+ years. I have a
-            passion for building beautiful, responsive websites with a focus on
-            quality testing, web optimisation and accessibility. I primarily
-            work with JavaScript, React and Typescript.
+            digital products. I have around two years working as a professioinal
+            developer, and additionally have worked in the Tech industry for
+            over 5 years since graduating from University with a degree in
+            Business Computing Systems. I have a passion for building beautiful,
+            responsive websites with a focus on quality testing, web
+            optimisation and accessibility. I primarily work with JavaScript,
+            React and Typescript.
           </p>
-          <p className='py-2 text-gray-600 text-2xl'>
+          <p className='py-2 text-gray-600 text-xl'>
             I have a passion for building beautiful, responsive websites with a
             focus on quality testing, web optimisation and accessibility. I
             primarily work with JavaScript, React and Typescript. I have been
             exposed to other languages and technologies such as C# and .Net,
             which I am also learning on the side.
           </p>
+          <p>
+            My goal is to use my skills and knowledge to build web experiences
+            that are not only beautiful, but also accessible and easy to use for
+            everyone.
+          </p>
         </div>
-        <div></div>
       </div>
     </div>
   );

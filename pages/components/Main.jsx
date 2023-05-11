@@ -13,16 +13,15 @@ const Main = () => {
             Welcome, I&apos;m <span className='text-[#901a1a]'>Lawrence</span>
           </h1>
           <p className='py-1 text-[#000000] text-4xl'>Front-End Developer</p>
-          <p className='py-4 text-gray-700 max-w-[70%] mx-auto my-10 text-2xl'>
-            A passionate&nbsp;
+          <p className='py-1 text-[#000000] text-xl'>London, UK</p>
+          <p className='py-4 text-gray-700 max-w-[70%] mx-auto my-10 text-2xl leading-9 text-justify'>
+            An experienced&nbsp;
             <span className='text-[#901a1a]'>
-              &#123; Front-end/Frontend/Front end &#125;
+              &#123; Front-end / Frontend / Front end &#125;
             </span>
-            &nbsp;web developer who loves to learn about everything related to
-            creating stylish and creative applications that make a positive
-            impact in the world. My goal is to use my skills and knowledge to
-            build web experiences that are not only beautiful, but also
-            accessible and easy to use for everyone.
+            &nbsp;web developer with a passion for web development and learning
+            about everything related to front end technologies to create modern
+            and stylish applications that make a positive impact in the world.
           </p>
           <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
             <div className='rounded-full shadow-lg shadow-red-700 p-6 cursor-pointer hover-scale-110 ease-in duration-300'>
@@ -30,17 +29,17 @@ const Main = () => {
                 <FaLinkedinIn />
               </Link>
             </div>
-            <div className='rounded-full shadow-lg shadow-red-800 p-6 cursor-pointer hover-scale-110 ease-in duration-300'>
+            <div className='rounded-full shadow-lg shadow-purple-800 p-6 cursor-pointer hover-scale-110 ease-in duration-300'>
               <Link href='https://github.com/lawlawson'>
                 <AiOutlineGithub />
               </Link>
             </div>
-            <div className='rounded-full shadow-lg shadow-red-700 p-6 cursor-pointer hover-scale-110 ease-in duration-300'>
+            <div className='rounded-full shadow-lg shadow-green-700 p-6 cursor-pointer hover-scale-110 ease-in duration-300'>
               <Link href='https://twitter.com/lawsoncodes'>
                 <AiOutlineTwitter />
               </Link>
             </div>
-            <div className='rounded-full shadow-lg shadow-red-800 p-6 cursor-pointer hover-scale-110 ease-in duration-300'>
+            <div className='rounded-full shadow-lg shadow-blue-800 p-6 cursor-pointer hover-scale-110 ease-in duration-300'>
               <Link href='https://dev.to/narhlawson'>
                 <ImBlog />
               </Link>
