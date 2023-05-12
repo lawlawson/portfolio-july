@@ -12,11 +12,14 @@ const About = () => {
             I am a Front End Developer specialising in building high impact
             digital products. I have worked in the Tech industry for over 7
             years since graduating from University with a degree in Business
-            Computing Systems. I have worked as a developer for around two
-            years. Prior to becoming a developer I worked as a Technical Project
-            Manager and a Technical Account Executive. These roles helped me
-            gain skills, understanding and experience of the the development
-            process contributing to making me a better developer in my opinion.
+            Computing Systems.
+          </p>
+          <p className='py-4 text-gray-600 max-w-[90%] m-auto text-xl leading-9 text-justify'>
+            I have worked as a developer for around two years. Prior to becoming
+            a developer I worked as a Technical Project Manager and a Technical
+            Account Executive. These roles helped me gain an abundance of
+            skills, understanding and experience of the the development process,
+            which has contributed to making me a better developer.
           </p>
           <p className='py-4 text-gray-600 max-w-[90%] m-auto text-xl leading-9 text-justify'>
             I have a passion for building beautiful, responsive websites with a
