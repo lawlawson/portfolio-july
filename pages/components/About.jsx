@@ -8,24 +8,21 @@ const About = () => {
           <p className='uppercase text-3xl tracking-widest text-[#901a1a] text-center'>
             About Me
           </p>
-          <p className='py-4 text-gray-600 max-w-[70%] m-auto text-2xl leading-9 text-justify'>
+          <p className='py-4 text-gray-600 max-w-[90%] m-auto text-xl leading-9 text-justify'>
             I am a Front End Developer specialising in building high impact
-            digital products. I have around two years working as a professioinal
-            developer, and additionally have worked in the Tech industry for
-            over 5 years since graduating from University with a degree in
-            Business Computing Systems. I have a passion for building beautiful,
-            responsive websites with a focus on quality testing, web
-            optimisation and accessibility. I primarily work with JavaScript,
-            React and Typescript.
+            digital products. I have worked in the Tech industry for over 7
+            years since graduating from University with a degree in Business
+            Computing Systems. I have worked as a developer for around two
+            years. Prior to becoming a developer I worked as a Technical Project
+            Manager and a Technical Account Executive. These roles helped me
+            gain skills, understanding and experience of the the development
+            process contributing to making me a better developer in my opinion.
           </p>
-          <p className='py-4 text-gray-600 max-w-[70%] m-auto text-2xl leading-9 text-justify'>
+          <p className='py-4 text-gray-600 max-w-[90%] m-auto text-xl leading-9 text-justify'>
             I have a passion for building beautiful, responsive websites with a
-            focus on quality testing, web optimisation and accessibility. I
-            primarily work with JavaScript, React and Typescript. I have been
-            exposed to other languages and technologies such as C# and .Net,
-            which I am also learning on the side.
+            focus on quality testing, web optimisation and accessibility.
           </p>
-          <p className='py-4 text-gray-600 max-w-[70%] m-auto text-2xl leading-9 text-justify'>
+          <p className='py-4 max-w-[90%] m-auto text-xl leading-9 text-justify text-[#901a1a] font-semibold'>
             My goal is to use my skills and knowledge to build web experiences
             that are not only beautiful, but also accessible and easy to use for
             everyone.

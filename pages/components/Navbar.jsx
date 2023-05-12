@@ -51,27 +51,27 @@ const Navbar = () => {
           : 'fixed w-full h-20 z-[100]'
       }>
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-        <div>
+        <ul>
           <Link href='/'>
-            <div className='ml-10 text-m font-bold uppercase hover:border-b transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...'>
+            <li className='ml-10 text-m font-bold uppercase hover transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...'>
               Home
-            </div>
+            </li>
           </Link>
-        </div>
+        </ul>
         <div>
           <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
             <Link href='/#about'>
-              <li className='ml-10 text-m uppercase hover:border-b transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...'>
+              <li className='ml-10 text-m uppercase transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...'>
                 About
               </li>
             </Link>
             <Link href='/#skills'>
-              <li className='ml-10 text-m uppercase hover:border-b transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...'>
+              <li className='ml-10 text-m uppercase transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...'>
                 Skills
               </li>
             </Link>
             <Link href='/#projects'>
-              <li className='ml-10 text-m uppercase hover:border-b transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...'>
+              <li className='ml-10 text-m uppercase transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...'>
                 Projects
               </li>
             </Link>
