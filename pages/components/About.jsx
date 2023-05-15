@@ -9,26 +9,26 @@ const About = () => {
             About Me
           </p>
           <p className='py-4 text-gray-600 max-w-[90%] m-auto text-xl leading-9 text-justify'>
-            I am a Front End Developer specialising in building high impact
-            digital products. I have worked in the Tech industry for over 7
+            Hello! I just wanted to use this space to share a little bit about
+            myself. I am a Front End Developer and absolutely love learning and
+            building applications. I have worked in the Tech industry for over 7
             years since graduating from University with a degree in Business
-            Computing Systems.
+            Computing Systems (Computer Science).
           </p>
           <p className='py-4 text-gray-600 max-w-[90%] m-auto text-xl leading-9 text-justify'>
-            I have worked as a developer for around two years. Prior to becoming
-            a developer I worked as a Technical Project Manager and a Technical
-            Account Executive. These roles helped me gain an abundance of
-            skills, understanding and experience of the the development process,
-            which has contributed to making me a better developer.
+            I am passionate about working on visually attractive
+            websites/applications that not only look stunning, but that are also
+            responsive and easy to use for all users. I strongly believe that
+            quality testing, web optimisation and accessibility are all key
+            components of a good project.
           </p>
           <p className='py-4 text-gray-600 max-w-[90%] m-auto text-xl leading-9 text-justify'>
-            I have a passion for building beautiful, responsive websites with a
-            focus on quality testing, web optimisation and accessibility.
-          </p>
-          <p className='py-4 max-w-[90%] m-auto text-xl leading-9 text-justify text-[#901a1a] font-semibold'>
-            My goal is to use my skills and knowledge to build web experiences
-            that are not only beautiful, but also accessible and easy to use for
-            everyone.
+            As a Front End Developer, I take great pride in my work and am
+            committed to delivering the best results possible. My ultimate goal
+            is to create web experiences that exceed expectations and leave a
+            lasting impression on users. I believe that everyone should have
+            access to high-quality digital products, and I am dedicated to
+            making that a reality through my work.
           </p>
         </div>
       </div>
