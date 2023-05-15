@@ -14,7 +14,7 @@ const Main = () => {
           </h1>
           <p className='py-1 text-[#000000] text-4xl'>Front-End Developer</p>
           <p className='py-1 text-[#000000] text-xl'>London, UK</p>
-          <p className='text-gray-700 max-w-[70%] mx-auto my-5 text-xl text-justify tracking-tight'>
+          <p className='text-gray-700 max-w-[70%] mx-auto my-5 text-2xl text-justify tracking-tight'>
             An experienced&nbsp;
             <span className='text-[#901a1a]'>
               &#123;Front-end/Frontend/Front end&#125;

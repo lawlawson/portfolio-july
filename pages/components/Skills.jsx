@@ -8,7 +8,7 @@ const Skills = () => {
         <p className='text-3xl tracking-widest uppercase text-[#901a1a] text-center mb-8'>
           Skills
         </p>
-        <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8'>
+        <div className='grid md:grid-cols-2 lg:grid-cols-5 gap-8 mt-8'>
           <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid grid-cols-2 gap-5 justify-center items-center'>
               <div>
@@ -20,9 +20,7 @@ const Skills = () => {
                 />
               </div>
               <div className='flex flex-col items-center justify-center'>
-                <p className='uppercase font-bold tracking-wide text-xl'>
-                  html
-                </p>
+                <p className='uppercase text-xl'>html</p>
               </div>
             </div>
           </div>
@@ -37,7 +35,7 @@ const Skills = () => {
                 />
               </div>
               <div className='flex flex-col items-center justify-center'>
-                <h3>CSS</h3>
+                <p className='uppercase text-xl'>css</p>
               </div>
             </div>
           </div>
@@ -52,7 +50,7 @@ const Skills = () => {
                 />
               </div>
               <div className='flex flex-col items-center justify-center'>
-                <h3>JavaScript</h3>
+                <p className='text-xl'>JavaScript</p>
               </div>
             </div>
           </div>
@@ -67,7 +65,7 @@ const Skills = () => {
                 />
               </div>
               <div className='flex flex-col items-center justify-center'>
-                <h3>React</h3>
+                <p className='text-xl'>React</p>
               </div>
             </div>
           </div>
@@ -82,11 +80,11 @@ const Skills = () => {
                 />
               </div>
               <div className='flex flex-col items-center justify-center'>
-                <h3>Typescript</h3>
+                <p className='text-xl'>TypeScript</p>
               </div>
             </div>
           </div>
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+          {/* <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div>
                 <Image
@@ -100,8 +98,8 @@ const Skills = () => {
                 <h3>Next JS</h3>
               </div>
             </div>
-          </div>
-          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+          </div> */}
+          {/* <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid grid-cols-2 gap-4 justify-center items-center'>
               <div>
                 <Image
@@ -115,7 +113,7 @@ const Skills = () => {
                 <h3>Git</h3>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
