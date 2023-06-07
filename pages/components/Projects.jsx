@@ -5,8 +5,11 @@ const Projects = () => {
   const projects = [
     {
       title: 'Manage Landing Page',
-      description: 'This is the first project',
-      imageUrl: '/',
+      description:
+        'This landing page project is fully responsive and features a carousel using Swiper. I created this project primarily using Tailwind CSS.',
+      // stack:'HTML, CSS, and JavaScript',
+      imageUrl: '/../public/assets/projects/manage.png',
+      url: 'https://celebrated-biscochitos-f95934.netlify.app/',
     },
     {
       title: 'Social Proof Section',
@@ -33,11 +36,11 @@ const Projects = () => {
       description: 'This is the second project!!!',
       imageUrl: '/../public/assets/projects/previewImg.png',
     },
-    {
-      title: 'Todo App',
-      description: 'This is the second project!!!',
-      imageUrl: '/../public/assets/projects/todoPreview.png',
-    },
+    // {
+    //   title: 'Todo App',
+    //   description: 'This is the second project!!!',
+    //   imageUrl: '/../public/assets/projects/todoPreview.png',
+    // },
   ];
 
   return (
@@ -48,19 +51,27 @@ const Projects = () => {
         </p>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14'>
           {projects.map((project, index) => (
-            <div key={index} className='bg-white rounded-lg shadow-md p-4'>
-              <Image
-                src={project.imageUrl}
-                width={900}
-                height={500}
-                alt=''
-                fill={true}
-              />
-              <h3 className='text-lg font-semibold mb-2 pt-5'>
-                {project.title}
-              </h3>
-              <p className='text-gray-600'>{project.description}</p>
-            </div>
+            <a
+              key={index}
+              href={project.url}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='hover:underline'>
+              <div key={index} className='bg-white rounded-lg shadow-md p-4'>
+                <Image
+                  src={project.imageUrl}
+                  width={900}
+                  height={500}
+                  alt=''
+                  fill={true}
+                />
+                <h3 className='text-lg font-semibold mb-2 pt-5'>
+                  {project.title}
+                </h3>
+                {/* <p className='text-md font-bold mb-2'>{project.stack}</p> */}
+                <p className='text-gray-600'>{project.description}</p>
+              </div>
+            </a>
           ))}
         </div>
       </div>
