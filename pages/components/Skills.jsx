@@ -74,13 +74,13 @@ const Skills = () => {
               <div>
                 <Image
                   alt=''
-                  src='/../public/assets/skills/TS-logo.png'
+                  src='/../public/assets/skills/tailwind-icon.png'
                   width='64px'
                   height='64px'
                 />
               </div>
               <div className='flex flex-col items-center justify-center'>
-                <p className='text-xl'>TypeScript</p>
+                <p className='text-xl'>Tailwind</p>
               </div>
             </div>
           </div>
