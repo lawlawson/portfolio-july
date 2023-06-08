@@ -14,7 +14,7 @@ const Skills = () => {
               <div>
                 <Image
                   alt=''
-                  src='/public/assets/skills/html_logo.png'
+                  src='/../portfolio-july/public/assets/skills/html_logo.png'
                   width='64px'
                   height='64px'
                 />
@@ -29,7 +29,7 @@ const Skills = () => {
               <div>
                 <Image
                   alt=''
-                  src='/public/assets/skills/css_logo.png'
+                  src='/./public/assets/skills/css_logo.png'
                   width='64px'
                   height='64px'
                 />
@@ -44,7 +44,7 @@ const Skills = () => {
               <div>
                 <Image
                   alt=''
-                  src='/public/assets/skills/javascript_logo.png'
+                  src='/public/assets/skills/javascript_logo.png/'
                   width='64px'
                   height='64px'
                 />
@@ -59,7 +59,7 @@ const Skills = () => {
               <div>
                 <Image
                   alt=''
-                  src='/public/assets/skills/react_logo.png'
+                  src='/../public/assets/skills/react_logo.png/'
                   width='64px'
                   height='64px'
                 />
@@ -74,7 +74,7 @@ const Skills = () => {
               <div>
                 <Image
                   alt=''
-                  src='/public/assets/skills/TS-logo.png'
+                  src='/../public/assets/skills/TS-logo.png'
                   width='64px'
                   height='64px'
                 />
