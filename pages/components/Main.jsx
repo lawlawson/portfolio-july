@@ -20,8 +20,9 @@ const Main = () => {
               &#123;Front-end/Frontend/Front end&#125;
             </span>
             &nbsp;web developer with a passion for web development and learning
-            about everything related to front end technologies to create modern
-            and stylish applications that make a positive impact in the world.
+            about the latest front end technologies used to create modern,
+            stylish, accessible and performant applications that make a positive
+            impact in the world.
           </p>
           <div className='flex items-center justify-between max-w-[330px] m-auto p-4'>
             <div className='rounded-full shadow-lg shadow-red-700 p-6 cursor-pointer hover-scale-110 ease-in duration-300'>
