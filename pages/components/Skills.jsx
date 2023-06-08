@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import htmlLogo from '/public/assets/skills/html_logo.png';
 
 const Skills = () => {
   return (
@@ -12,12 +13,7 @@ const Skills = () => {
           <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid grid-cols-2 gap-5 justify-center items-center'>
               <div>
-                <Image
-                  alt=''
-                  src='/../portfolio-july/public/assets/skills/html_logo.png'
-                  width='64px'
-                  height='64px'
-                />
+                <Image alt='' src={htmlLogo} width='64px' height='64px' />
               </div>
               <div className='flex flex-col items-center justify-center'>
                 <p className='uppercase text-xl'>html</p>
