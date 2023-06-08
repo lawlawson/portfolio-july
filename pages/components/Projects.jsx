@@ -1,41 +1,47 @@
 import React from 'react';
 import Image from 'next/image';
 
+import manage from '/public/assets/projects/manage.png';
+import socialProof from '/public/assets/projects/social_proof.png';
+import productPreview from '/public/assets/projects/product_preview.png';
+import markdownPreview from '/public/assets/projects/previewImg.png';
+import todoPreview from '/public/assets/projects/todoPreview.png';
+
 const Projects = () => {
   const projects = [
     {
       title: 'Manage Landing Page',
       description:
         'Landing page project is fully responsive and features a carousel using Swiper. I created this project primarily using Tailwind CSS. It is fully responsive and has some visual changes based on screen/device size.',
-      imageUrl: '/public/assets/projects/manage.png',
+      imageUrl: manage,
       url: 'https://celebrated-biscochitos-f95934.netlify.app/',
     },
     {
       title: 'Social Proof Section',
       description:
         'Small section of a larger website project was a great opportunity to work with semantic HTML, flexbox and grid. It is fully responsive.',
-      imageUrl: '/public/assets/projects/social_proof.png',
+      imageUrl: socialProof,
       url: 'https://bejewelled-marigold-51491d.netlify.app/',
     },
     {
       title: 'Product Preview Card',
       description:
         'Product preview component built with the purpose of using semantic HTML and writing CSS using BEM methodology. This was a good attempt at building a pixel perfect design.',
-      imageUrl: '/public/assets/projects/product_preview.png',
+      imageUrl: productPreview,
       url: 'https://sensational-eclair-c6c44c.netlify.app/',
     },
     {
       title: 'Markdown Preview',
       description:
         'Markdown Previewer built with react. Based on a FreeCodeCamp curriculum project where the aim was to build a project that allows you to preview markdown text based on user input.',
-      imageUrl: '/public/assets/projects/previewImg.png',
+      imageUrl: markdownPreview,
       url: 'https://mp-react.netlify.app/',
     },
     {
       title: 'Create-A-List',
       description:
         'Application built with React that allows you to create a todo list. You can strike through completed items, remove items all together and also filter by completed and uncompleted items. Also uses local storage to keep track of changes.',
-      imageUrl: '/public/assets/projects/todoPreview.png',
+      imageUrl: todoPreview,
       url: 'https://lawson-todo-app.netlify.app/',
     },
   ];
