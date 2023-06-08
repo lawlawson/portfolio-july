@@ -7,14 +7,14 @@ import Link from 'next/link';
 const Main = () => {
   return (
     <div id='home' className='w-full h-screen text-center'>
-      <div className='max-w-[85%] w-full h-full m-auto p2 flex justify-center items-center'>
+      <div className='max-w-[85%] w-full h-full m-auto flex justify-center items-center'>
         <div>
           <h1 className='py-1 text-gray-600'>
             Welcome, I&apos;m <span className='text-[#901a1a]'>Lawrence</span>
           </h1>
           <p className='py-1 text-[#000000] text-4xl'>Front-End Developer</p>
           <p className='py-1 text-[#000000] text-xl'>London, UK</p>
-          <p className='text-gray-700 max-w-[70%] mx-auto my-5 text-2xl text-justify tracking-tight'>
+          <p className='text-gray-700 md:max-w-[60%] mx-auto my-5 text-2xl text-justify tracking-tight'>
             An experienced&nbsp;
             <span className='text-[#901a1a]'>
               &#123;Front-end/Frontend/Front end&#125;
