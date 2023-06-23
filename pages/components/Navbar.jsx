@@ -65,11 +65,11 @@ const Navbar = () => {
                 About
               </li>
             </Link>
-            <Link href='/#skills'>
+            {/* <Link href='/#skills'>
               <li className='ml-10 text-m uppercase transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...'>
                 Skills
               </li>
-            </Link>
+            </Link> */}
             <Link href='/#projects'>
               <li className='ml-10 text-m uppercase transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...'>
                 Projects
