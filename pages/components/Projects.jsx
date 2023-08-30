@@ -3,9 +3,7 @@ import Image from 'next/image';
 
 import manage from '/public/assets/projects/manage.png';
 import socialProof from '/public/assets/projects/social_proof.png';
-import productPreview from '/public/assets/projects/product_preview.png';
-import markdownPreview from '/public/assets/projects/previewImg.png';
-import todoPreview from '/public/assets/projects/todoPreview.png';
+import priceGrid from '/public/assets/projects/price_grid.png';
 
 const Projects = () => {
   const projects = [
@@ -24,25 +22,11 @@ const Projects = () => {
       url: 'https://bejewelled-marigold-51491d.netlify.app/',
     },
     {
-      title: 'Product Preview Card',
+      title: 'Single Price Grid Component',
       description:
-        'Product preview component built with the purpose of using semantic HTML and writing CSS using BEM methodology. This was a good attempt at building a pixel perfect design.',
-      imageUrl: productPreview,
-      url: 'https://sensational-eclair-c6c44c.netlify.app/',
-    },
-    {
-      title: 'Markdown Preview',
-      description:
-        'Markdown Previewer built with react. Based on a FreeCodeCamp curriculum project where the aim was to build a project that allows you to preview markdown text based on user input.',
-      imageUrl: markdownPreview,
-      url: 'https://mp-react.netlify.app/',
-    },
-    {
-      title: 'Create-A-List',
-      description:
-        'Application built with React that allows you to create a todo list. You can strike through completed items, remove items all together and also filter by completed and uncompleted items. Also uses local storage to keep track of changes.',
-      imageUrl: todoPreview,
-      url: 'https://lawson-todo-app.netlify.app/',
+        'Component from a larger website built using semantic HTML, CSS and Grid. Full responsive and was built pixel perfect from provided designs.',
+      imageUrl: priceGrid,
+      url: 'https://velvety-custard-2fecd5.netlify.app/',
     },
   ];
 
