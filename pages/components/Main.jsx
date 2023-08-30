@@ -12,10 +12,10 @@ const Main = () => {
           <h1 className='py-1 text-gray-600'>
             Welcome, I&apos;m <span className='text-[#901a1a]'>Lawrence</span>
           </h1>
-          <p className='py-1 text-[#000000] text-4xl'>Front-End Developer</p>
-          <p className='py-1 text-[#000000] text-xl'>London, UK</p>
-          <p className='text-gray-700 md:max-w-[60%] mx-auto my-5 text-2xl text-justify tracking-tight'>
-            An experienced&nbsp;
+          <p className='py-5 text-[#000000] text-4xl'>Front-End Developer</p>
+          <p className='py-5 text-[#000000] text-xl'>London, UK</p>
+          <p className='text-gray-700 md:max-w-[60%] mx-auto my-5 text-xl md:text-2xl text-justify tracking-tighter'>
+            Experienced&nbsp;
             <span className='text-[#901a1a]'>
               &#123;Front-end/Frontend/Front end&#125;
             </span>

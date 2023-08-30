@@ -114,21 +114,21 @@ const Navbar = () => {
                   About
                 </li>
               </Link>
-              <Link href='/#skills'>
+              {/* <Link href='/#skills'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Skills
                 </li>
-              </Link>
+              </Link> */}
               <Link href='/#projects'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Projects
                 </li>
               </Link>
-              <Link href='/#contact'>
+              {/* <Link href='/#contact'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Contact
                 </li>
-              </Link>
+              </Link> */}
             </ul>
             <div className='pt-40'>
               <p className='uppercase tracking-widest text-[#901a1a]'>
