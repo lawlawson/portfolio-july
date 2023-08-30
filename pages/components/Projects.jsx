@@ -47,7 +47,7 @@ const Projects = () => {
   ];
 
   return (
-    <div id='projects' className='w-full lg:h-screen p-2'>
+    <div id='projects' className='w-full lg:h-screen p-2 py-16'>
       <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
         <p className='text-3xl tracking-widest uppercase text-[#901a1a] text-center mb-8 pt-8'>
           My Projects

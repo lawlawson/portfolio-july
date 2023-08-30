@@ -1,13 +1,6 @@
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
-import {
-  AiOutlineClose,
-  AiOutlineGithub,
-  AiOutlineMenu,
-  AiOutlineTwitter,
-} from 'react-icons/ai';
-import { FaLinkedinIn } from 'react-icons/fa';
-import { ImBlog } from 'react-icons/im';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { useRouter } from 'next/router';
 
 const Navbar = () => {
@@ -65,11 +58,6 @@ const Navbar = () => {
                 About
               </li>
             </Link>
-            {/* <Link href='/#skills'>
-              <li className='ml-10 text-m uppercase transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...'>
-                Skills
-              </li>
-            </Link> */}
             <Link href='/#projects'>
               <li className='ml-10 text-m uppercase transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...'>
                 Projects
@@ -114,41 +102,12 @@ const Navbar = () => {
                   About
                 </li>
               </Link>
-              {/* <Link href='/#skills'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Skills
-                </li>
-              </Link> */}
               <Link href='/#projects'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Projects
                 </li>
               </Link>
-              {/* <Link href='/#contact'>
-                <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                  Contact
-                </li>
-              </Link> */}
             </ul>
-            <div className='pt-40'>
-              <p className='uppercase tracking-widest text-[#901a1a]'>
-                Find me on
-              </p>
-              <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
-                  <FaLinkedinIn />
-                </div>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
-                  <AiOutlineTwitter />
-                </div>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
-                  <AiOutlineGithub />
-                </div>
-                <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
-                  <ImBlog />
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
