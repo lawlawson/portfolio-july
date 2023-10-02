@@ -11,9 +11,7 @@ const About = () => {
           <p className='py-4 text-gray-600 max-w-[90%] m-auto text-xl leading-9 text-justify'>
             Hello! I just wanted to use this space to share a little bit about
             myself. I am a Front End Developer and absolutely love learning and
-            building applications. I have worked in the Tech industry for over 7
-            years in a few different roles since graduating from University with
-            a degree in Business Computing Systems (Computer Science).
+            building applications.
           </p>
           <p className='py-4 text-gray-600 max-w-[90%] m-auto text-xl leading-9 text-justify'>
             I love working on visually attractive websites/applications that not
