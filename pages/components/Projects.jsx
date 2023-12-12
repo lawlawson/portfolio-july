@@ -4,6 +4,7 @@ import Image from 'next/image';
 import manage from '/public/assets/projects/manage.png';
 import socialProof from '/public/assets/projects/social_proof.png';
 import priceGrid from '/public/assets/projects/price_grid.png';
+import recipick from '/public/assets/projects/recipick.png';
 
 const Projects = () => {
   const projects = [
@@ -27,6 +28,13 @@ const Projects = () => {
         'Component from a larger website built using semantic HTML, CSS and Grid. Full responsive and was built pixel perfect from provided designs.',
       imageUrl: priceGrid,
       url: 'https://velvety-custard-2fecd5.netlify.app/',
+    },
+    {
+      title: 'ReciPick',
+      description:
+        'ReciPick is a JavaScript based tool that allows users to input an ingredient and find recipes that use that specific ingredient.',
+      imageUrl: recipick,
+      url: 'https://recipick-v46-tier1-team-02.netlify.app/',
     },
   ];
 
