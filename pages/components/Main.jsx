@@ -18,7 +18,7 @@ const Main = () => {
             &nbsp;web developer with a passion for web development and learning
             about the latest front end technologies used to create modern,
             stylish, accessible and performant applications that make a positive
-            impact in the world.!!!
+            impact in the world.
           </p>
         </div>
       </div>
