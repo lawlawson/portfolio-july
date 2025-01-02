@@ -2,39 +2,28 @@ import React from 'react';
 import Image from 'next/image';
 
 import manage from '/public/assets/projects/manage.png';
-import socialProof from '/public/assets/projects/social_proof.png';
-import priceGrid from '/public/assets/projects/price_grid.png';
+// import socialProof from '/public/assets/projects/social_proof.png';
+// import priceGrid from '/public/assets/projects/price_grid.png';
 import recipick from '/public/assets/projects/recipick.png';
 
 const Projects = () => {
   const projects = [
-    {
-      title: 'Manage Landing Page',
-      description:
-        'Landing page project is fully responsive and features a carousel using Swiper. I created this project primarily using Tailwind CSS. It is fully responsive and has some visual changes based on screen/device size.',
-      imageUrl: manage,
-      url: 'https://celebrated-biscochitos-f95934.netlify.app/',
-    },
-    {
-      title: 'Social Proof Section',
-      description:
-        'Small section of a larger website project was a great opportunity to work with semantic HTML, flexbox and grid. It is fully responsive.',
-      imageUrl: socialProof,
-      url: 'https://bejewelled-marigold-51491d.netlify.app/',
-    },
-    {
-      title: 'Single Price Grid Component',
-      description:
-        'Component from a larger website built using semantic HTML, CSS and Grid. Full responsive and was built pixel perfect from provided designs.',
-      imageUrl: priceGrid,
-      url: 'https://velvety-custard-2fecd5.netlify.app/',
-    },
     {
       title: 'ReciPick',
       description:
         'ReciPick is a JavaScript based tool that allows users to input an ingredient and find recipes that use that specific ingredient.',
       imageUrl: recipick,
       url: 'https://recipick-v46-tier1-team-02.netlify.app/',
+      code: 'https://github.com/chingu-voyages/v46-tier1-team-02',
+      tools: 'HTML, CSS & JavaScript',
+    },
+    {
+      title: 'Manage Landing Page',
+      description:
+        'Landing page project is fully responsive and features a carousel using Swiper. I created this project primarily using Tailwind CSS. It is fully responsive and has some visual changes based on screen/device size.',
+      imageUrl: manage,
+      url: 'https://celebrated-biscochitos-f95934.netlify.app/',
+      tools: 'HTML & Tailwind CSS',
     },
   ];
 
@@ -46,12 +35,11 @@ const Projects = () => {
         </p>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14'>
           {projects.map((project, index) => (
-            <a
+            <div
               key={index}
               href={project.url}
               target='_blank'
-              rel='noopener noreferrer'
-              className='hover:underline'>
+              rel='noopener noreferrer'>
               <div key={index} className='bg-white rounded-lg shadow-md p-4'>
                 <Image
                   src={project.imageUrl}
@@ -64,8 +52,19 @@ const Projects = () => {
                   {project.title}
                 </h3>
                 <p className='text-gray-600'>{project.description}</p>
+                <p className='text-gray-600 font-bold'>
+                  Tech stack: {project.tools}
+                </p>
+                <div className='flex justify-left'>
+                  <button className='text-white py-2 px-4 mt-4 mr-2'>
+                    Project
+                  </button>
+                  <button className='text-white py-2 px-4 mt-4 ml-2'>
+                    Code
+                  </button>
+                </div>
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </div>
