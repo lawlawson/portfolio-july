@@ -33,6 +33,6 @@ html {
   }
 
   button {
-    @apply shadow-sm shadow-gray-400 rounded-full uppercase bg-[#ecf1f3] text-gray-500;
+    @apply shadow-sm shadow-gray-400 rounded-full uppercase bg-[#8a171a] text-white;
   }
 }

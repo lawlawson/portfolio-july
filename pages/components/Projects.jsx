@@ -2,8 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import manage from '/public/assets/projects/manage.png';
-// import socialProof from '/public/assets/projects/social_proof.png';
-// import priceGrid from '/public/assets/projects/price_grid.png';
+import preview from '/public/assets/projects/previewImg.png';
 import recipick from '/public/assets/projects/recipick.png';
 
 const Projects = () => {
@@ -25,6 +24,15 @@ const Projects = () => {
       url: 'https://celebrated-biscochitos-f95934.netlify.app/',
       code: 'https://github.com/lawlawson/manage-landing-page',
       tools: 'HTML & Tailwind CSS',
+    },
+    {
+      title: 'Markdown Previewer',
+      description:
+        'Markdown Previewer is a responsive React built project that allows users to input markdown, which is a markup language used to create formatted text.',
+      imageUrl: preview,
+      url: 'https://mp-react.netlify.app/',
+      code: 'https://github.com/lawlawson/markdown-previewer-react',
+      tools: 'React',
     },
   ];
 
@@ -49,6 +57,7 @@ const Projects = () => {
                   {project.title}
                 </h3>
                 <p className='text-gray-600'>{project.description}</p>
+                <br />
                 <p className='text-gray-600 font-bold'>
                   Tech stack: {project.tools}
                 </p>
