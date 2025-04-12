@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaLinkedin, FaGithub, FaDev } from 'react-icons/fa';
 
 const Main = () => {
   return (
@@ -20,6 +21,31 @@ const Main = () => {
             stylish, accessible and performant applications that make a positive
             impact in the world.
           </p>
+
+          {/* Social Icons */}
+          <div className='flex justify-center items-center space-x-6 mt-6 text-3xl text-[#901a1a]'>
+            <a
+              href='https://www.linkedin.com/in/yourprofile'
+              target='_blank'
+              rel='noreferrer'
+              className='bg-[#901a1a] text-white p-4 rounded-lg hover:scale-110 transition-transform duration-300'>
+              <FaLinkedin />
+            </a>
+            <a
+              href='https://github.com/yourusername'
+              target='_blank'
+              rel='noreferrer'
+              className='bg-[#901a1a] text-white p-4 rounded-lg hover:scale-110 transition-transform duration-300'>
+              <FaGithub />
+            </a>
+            <a
+              href='https://dev.to/yourusername'
+              target='_blank'
+              rel='noreferrer'
+              className='bg-[#901a1a] text-white p-4 rounded-lg hover:scale-110 transition-transform duration-300'>
+              <FaDev />
+            </a>
+          </div>
         </div>
       </div>
     </div>
