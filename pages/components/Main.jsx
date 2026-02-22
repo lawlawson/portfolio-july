@@ -37,14 +37,9 @@ const Main = () => {
 
           {/* Bio */}
           <p className='max-w-prose mx-auto text-lg md:text-xl leading-relaxed tracking-wide px-2 mb-8'>
-            Experienced{' '}
-            <span className='text-[#901a1a]'>
-              {'{Front-end/Frontend/Front end}'}
-            </span>{' '}
-            web developer with a passion for crafting modern, accessible, and
-            high-performance applications. Continuously exploring the latest
-            front-end technologies and AI tools to build stylish, user-centered
-            experiences that make a real-world impact.
+            I build fast, accessible frontends optimized for Core Web Vitals and
+            WCAG compliance. Every interaction is intentional—streamlined UI
+            flows, intuitive navigation, measurable performance gains.
           </p>
 
           {/* Social Media Icons */}
