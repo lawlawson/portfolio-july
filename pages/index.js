@@ -17,8 +17,8 @@ export default function Home() {
       </Head>
       <Navbar />
       <Main />
-      <About />
       <Projects />
+      <About />
     </div>
   );
 }

@@ -3,81 +3,64 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const ProjectCard = ({ project }) => {
-  const { id, title, description, imageUrl, imageAlt, url, code, tools } = project;
+  const { id, title, description, imageUrl, imageAlt, url, code, tools } =
+    project;
 
   return (
-    <article className='bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300'>
+    <article className='group relative overflow-hidden rounded-2xl border border-gray-200/70 bg-white/90 shadow-sm backdrop-blur transition duration-300 hover:-translate-y-1 hover:shadow-xl'>
+      <div className='absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-[#901a1a]/5 opacity-0 transition duration-300 group-hover:opacity-100' />
+
       {/* Image Container */}
-      <div className='relative w-full h-64 overflow-hidden bg-gray-100'>
+      <div className='relative w-full aspect-[16/10] overflow-hidden'>
         <Image
           src={imageUrl}
           alt={imageAlt}
           fill
-          className='object-cover hover:scale-105 transition-transform duration-300'
+          className='object-cover transition duration-500 group-hover:scale-105'
           priority={false}
         />
       </div>
 
       {/* Card Content */}
-      <div className='p-6 flex flex-col h-full'>
-        {/* Title */}
-        <h3 className='text-xl font-semibold mb-3 text-gray-800'>
-          {title}
-        </h3>
-
-        {/* Description */}
-        <p className='text-gray-600 mb-4 flex-grow leading-relaxed'>
-          {description}
-        </p>
-
-        {/* Tech Stack */}
-        <div className='mb-4'>
-          <p className='text-sm font-semibold text-gray-700 mb-2'>
-            Tech stack:
-          </p>
-          <div className='flex flex-wrap gap-2'>
-            {tools.map((tool) => (
-              <span
-                key={tool}
-                className='inline-block bg-[#901a1a] text-white text-xs px-3 py-1 rounded'
-                aria-label={`Technology: ${tool}`}>
-                {tool}
-              </span>
-            ))}
-          </div>
+      <div className='relative z-10 flex h-full flex-col p-6'>
+        <div className='mb-3 flex flex-wrap gap-2'>
+          {tools.map((tool) => (
+            <span
+              key={tool}
+              className='inline-flex items-center rounded-full border border-[#901a1a]/20 bg-[#901a1a]/10 px-3 py-1 text-xs font-semibold text-[#6f1212]'
+              aria-label={`Technology: ${tool}`}>
+              {tool}
+            </span>
+          ))}
         </div>
 
-        {/* Action Buttons */}
-        <div className='flex gap-3 pt-4 border-t border-gray-200'>
+        <h3 className='text-xl font-semibold text-gray-900'>{title}</h3>
+
+        <p className='mt-3 text-gray-600 leading-relaxed'>{description}</p>
+
+        {/* Action Links */}
+        <div className='mt-6 grid grid-cols-1 gap-3 sm:grid-cols-3'>
           <a
             href={url}
             target='_blank'
             rel='noopener noreferrer'
-            className='flex-1'>
-            <button
-              className='w-full bg-[#901a1a] text-white py-2 px-4 rounded font-medium hover:bg-[#700f0f] transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#901a1a] focus:ring-offset-2'
-              aria-label={`View ${title} project`}>
-              View Project
-            </button>
+            className='inline-flex items-center justify-center rounded-full bg-[#901a1a] px-4 py-2 text-sm font-semibold text-white shadow-sm transition duration-200 hover:bg-[#700f0f] focus:outline-none focus:ring-2 focus:ring-[#901a1a] focus:ring-offset-2'
+            aria-label={`View ${title} project`}>
+            View Project
           </a>
           <a
             href={code}
             target='_blank'
             rel='noopener noreferrer'
-            className='flex-1'>
-            <button
-              className='w-full border-2 border-[#901a1a] text-[#901a1a] py-2 px-4 rounded font-medium hover:bg-[#901a1a] hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#901a1a] focus:ring-offset-2'
-              aria-label={`View ${title} source code`}>
-              Source Code
-            </button>
+            className='inline-flex items-center justify-center rounded-full border border-[#901a1a] px-4 py-2 text-sm font-semibold text-[#901a1a] transition duration-200 hover:bg-[#901a1a] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#901a1a] focus:ring-offset-2'
+            aria-label={`View ${title} source code`}>
+            Source Code
           </a>
           <Link href={`/projects/${id}`}>
-            <a>
-              <button
-                className='flex-1 text-[#901a1a] py-2 px-4 rounded font-medium hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#901a1a] focus:ring-offset-2'
-                aria-label={`Read ${title} case study`}>
-                Case Study
-              </button>
+            <a
+              className='inline-flex items-center justify-center rounded-full border border-gray-200 px-4 py-2 text-sm font-semibold text-gray-700 transition duration-200 hover:border-[#901a1a] hover:text-[#901a1a] focus:outline-none focus:ring-2 focus:ring-[#901a1a] focus:ring-offset-2'
+              aria-label={`Read ${title} case study`}>
+              Case Study
             </a>
           </Link>
         </div>
