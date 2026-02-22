@@ -9,24 +9,28 @@ const About = () => {
             About Me
           </p>
           <p className='py-4 text-gray-600 max-w-[90%] m-auto text-xl leading-9 text-justify'>
-            Hello! I just wanted to use this space to share a little bit about
-            myself. I am a Front End Developer and absolutely love learning and
-            building applications.
+            Hey, I&apos;m Lawrence. I genuinely enjoy building things on the web
+            and learning as I go. I get a lot of energy from turning an idea or
+            a rough design into a real, usable product people can rely on.
           </p>
           <p className='py-4 text-gray-600 max-w-[90%] m-auto text-xl leading-9 text-justify'>
-            I love working on visually attractive websites/applications that not
-            only look stunning, but are also responsive, accessible and easy to
-            use for all. I strongly believe that quality testing, web
-            optimisation and accessibility are all key components of a good
-            project.
+            I care about the stuff users actually feel—speed, clarity, and flows
+            that just make sense. That means keeping Core Web Vitals in check,
+            making sure accessibility is built in, and building components that
+            are clean, reusable, and easy to grow over time.
           </p>
           <p className='py-4 text-gray-600 max-w-[90%] m-auto text-xl leading-9 text-justify'>
-            As a Front End Developer I take great pride in my work and am
-            committed to delivering the best results possible. My ultimate goal
-            is to create web experiences that exceed expectations and leave a
-            lasting impression on users. I believe that everyone should have
-            access to high-quality digital products, and I am dedicated to
-            making that a reality through my work.
+            My main tools are HTML, CSS, JavaScript, React, and Tailwind CSS. I
+            like using them to build real products like ReciPick (ingredient-led
+            recipe search), the Manage landing page, and my Markdown Previewer,
+            because each project teaches me something new about UI, performance,
+            and user flow.
+          </p>
+          <p className='py-4 text-gray-600 max-w-[90%] m-auto text-xl leading-9 text-justify'>
+            I&apos;m always looking for the next project to build or improve,
+            and I enjoy learning by doing—shipping, testing, and refining until
+            the experience feels right. If there&apos;s a new tool or technique
+            that can make the product better, I want to try it.
           </p>
         </div>
       </div>
