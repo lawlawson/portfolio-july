@@ -34,7 +34,7 @@ const ProjectCaseStudy = ({ projectId }) => {
         {/* Hero Section */}
         <header className='mb-12'>
           <h1 className='text-4xl font-bold text-gray-900 mb-4'>{title}</h1>
-          
+
           <div className='relative w-full h-96 rounded-lg overflow-hidden shadow-lg mb-6'>
             <Image
               src={imageUrl}
@@ -142,7 +142,9 @@ const ProjectCaseStudy = ({ projectId }) => {
 
         {/* Related Projects */}
         <section className='pt-12 border-t border-gray-200'>
-          <h2 className='text-2xl font-bold text-gray-900 mb-6'>Explore More</h2>
+          <h2 className='text-2xl font-bold text-gray-900 mb-6'>
+            Explore More
+          </h2>
           <div className='flex flex-col sm:flex-row gap-4'>
             <Link href='/#projects'>
               <a className='flex-1 bg-[#901a1a] text-white py-3 px-6 rounded font-medium text-center hover:bg-[#700f0f] transition-colors duration-200'>
