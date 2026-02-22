@@ -38,7 +38,7 @@ const Main = () => {
           {/* Bio */}
           <p className='max-w-prose mx-auto text-lg md:text-xl leading-relaxed tracking-wide px-2 mb-8'>
             I build fast, accessible frontends optimized for Core Web Vitals and
-            WCAG compliance. Every interaction is intentional—streamlined UI
+            WCAG compliance. Every interaction is intentional, streamlined UI
             flows, intuitive navigation, measurable performance gains.
           </p>
 
