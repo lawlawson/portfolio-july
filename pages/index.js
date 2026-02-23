@@ -19,9 +19,9 @@ export default function Home() {
       </Head>
       <Navbar />
       <Main />
+      <About />
       <FeaturedProject />
       <Projects />
-      <About />
       <CTASection />
     </div>
   );

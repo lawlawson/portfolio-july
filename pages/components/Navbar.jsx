@@ -58,9 +58,19 @@ const Navbar = () => {
                 About
               </li>
             </Link>
+            <Link href='/#featured'>
+              <li className='ml-10 text-m uppercase transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...'>
+                Featured
+              </li>
+            </Link>
             <Link href='/#projects'>
               <li className='ml-10 text-m uppercase transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...'>
                 Projects
+              </li>
+            </Link>
+            <Link href='/#contact'>
+              <li className='ml-10 text-m uppercase transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...'>
+                Contact
               </li>
             </Link>
           </ul>
@@ -102,9 +112,19 @@ const Navbar = () => {
                   About
                 </li>
               </Link>
+              <Link href='/#featured'>
+                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                  Featured
+                </li>
+              </Link>
               <Link href='/#projects'>
                 <li onClick={() => setNav(false)} className='py-4 text-sm'>
                   Projects
+                </li>
+              </Link>
+              <Link href='/#contact'>
+                <li onClick={() => setNav(false)} className='py-4 text-sm'>
+                  Contact
                 </li>
               </Link>
             </ul>

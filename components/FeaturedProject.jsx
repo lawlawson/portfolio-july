@@ -11,7 +11,9 @@ const FeaturedProject = () => {
   }
 
   return (
-    <section className='w-full bg-gradient-to-b from-white to-gray-50 py-20 lg:py-28'>
+    <section
+      id='featured'
+      className='w-full bg-gradient-to-b from-white to-gray-50 py-20 lg:py-28'>
       <div className='max-w-[1240px] mx-auto px-4 lg:px-8'>
         {/* Section Header */}
         <div className='mb-12 lg:mb-16'>
