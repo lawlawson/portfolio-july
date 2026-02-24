@@ -6,17 +6,17 @@ import { useRouter } from 'next/router';
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState('#ecf0f3');
-  const [linkColor, setLinkColor] = useState('#1f2937');
+  const [navBg, setNavBg] = useState('#1f2937');
+  const [linkColor, setLinkColor] = useState('#f3f4f6');
   const router = useRouter();
 
   useEffect(() => {
     if (router.asPath === '/previewer' || router.asPath === '/todo') {
       setNavBg('transparent');
-      setLinkColor('#ecf0f3');
+      setLinkColor('#f3f4f6');
     } else {
-      setNavBg('#ecf0f3');
-      setLinkColor('#1f2937');
+      setNavBg('#1f2937');
+      setLinkColor('#f3f4f6');
     }
   }, [router]);
 
@@ -44,7 +44,7 @@ const Navbar = () => {
           : 'fixed w-full h-14 z-[100]'
       }>
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-        <ul>
+        <ul style={{ color: `${linkColor}` }}>
           <Link href='/'>
             <li className='ml-10 text-m font-bold uppercase hover transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...'>
               Home
@@ -75,7 +75,7 @@ const Navbar = () => {
             </Link>
           </ul>
           <div onClick={handleNav} className='md:hidden'>
-            <AiOutlineMenu size={25} />
+            <AiOutlineMenu size={25} style={{ color: linkColor }} />
           </div>
         </div>
       </div>
@@ -87,7 +87,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'
+              ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#1f2937] text-gray-100 p-10 ease-in duration-500'
               : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
           }>
           <div>
@@ -95,7 +95,7 @@ const Navbar = () => {
               <Link href='/'>Lawrence Narh-Lawson</Link>
               <div
                 onClick={handleNav}
-                className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
+                className='rounded-full shadow-lg shadow-gray-700 p-3 cursor-pointer hover:bg-gray-700 transition-colors'>
                 <AiOutlineClose />
               </div>
             </div>

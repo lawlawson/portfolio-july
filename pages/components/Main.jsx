@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { FaLinkedin, FaGithub, FaDev } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaDev, FaXTwitter } from 'react-icons/fa6';
 import { HiArrowDown } from 'react-icons/hi';
 
 const socialLinks = [
@@ -17,6 +17,13 @@ const socialLinks = [
     label: 'GitHub',
     gradient: 'from-gray-700 to-gray-900',
     hoverGradient: 'hover:from-gray-800 hover:to-black',
+  },
+  {
+    href: 'https://x.com/lawsoncodes',
+    icon: <FaXTwitter className='w-7 h-7' />,
+    label: 'X (Twitter)',
+    gradient: 'from-slate-800 to-black',
+    hoverGradient: 'hover:from-slate-900 hover:to-black',
   },
   {
     href: 'https://dev.to/lawlawson',
