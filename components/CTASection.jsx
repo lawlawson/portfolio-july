@@ -4,7 +4,7 @@ const CTASection = () => {
   return (
     <section
       id='contact'
-      className='w-full bg-gradient-to-b from-gray-50 to-white py-20 lg:py-28'>
+      className='w-full bg-white py-20 lg:py-28 scroll-mt-14'>
       <div className='max-w-[1240px] mx-auto px-4 lg:px-8'>
         <div className='relative overflow-hidden rounded-3xl bg-gradient-to-br from-gray-900 via-[#1a1f35] to-[#0f172a] px-8 py-16 lg:px-16 lg:py-20 border border-gray-800/50 shadow-2xl'>
           <div className='absolute inset-0 bg-gradient-to-br from-[#901a1a]/10 via-transparent to-transparent opacity-50'></div>
