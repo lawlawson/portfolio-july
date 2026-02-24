@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedin, FaGithub, FaXTwitter } from 'react-icons/fa6';
+import { FaLinkedin, FaGithub, FaXTwitter, FaDev } from 'react-icons/fa6';
 import { HiMail } from 'react-icons/hi';
 
 const socialLinks = [
@@ -25,6 +25,13 @@ const socialLinks = [
     hoverGradient: 'hover:from-slate-900 hover:to-black',
   },
   {
+    href: 'https://dev.to/lawlawson',
+    icon: <FaDev className='w-6 h-6' />,
+    label: 'Dev.to',
+    gradient: 'from-gray-600 to-gray-800',
+    hoverGradient: 'hover:from-gray-700 hover:to-gray-900',
+  },
+  {
     href: 'mailto:narhlawson@gmail.com',
     icon: <HiMail className='w-6 h-6' />,
     label: 'Email',
@@ -42,11 +49,11 @@ const CTASection = () => {
         <div className='relative overflow-hidden rounded-3xl bg-gradient-to-br from-gray-900 via-[#1a1f35] to-[#0f172a] px-8 py-16 lg:px-16 lg:py-20 border border-gray-800/50 shadow-2xl'>
           <div className='absolute inset-0 bg-gradient-to-br from-[#901a1a]/10 via-transparent to-transparent opacity-50'></div>
 
-          <div className='relative z-10 max-w-2xl'>
+          <div className='relative z-10 max-w-2xl text-center mx-auto'>
             <h2 className='text-3xl lg:text-4xl font-bold text-white leading-tight'>
               Let&apos;s work together
             </h2>
-            <div className='mt-3 h-1 w-12 bg-[#901a1a] rounded'></div>
+            <div className='mt-3 h-1 w-12 bg-[#901a1a] rounded mx-auto'></div>
 
             <p className='mt-6 text-lg text-gray-300 leading-relaxed'>
               I&apos;m always interested in new projects and collaboration. If
@@ -58,7 +65,7 @@ const CTASection = () => {
               .
             </p>
 
-            <div className='mt-10 flex items-center gap-4'>
+            <div className='mt-10 flex items-center justify-center gap-4'>
               {socialLinks.map(
                 ({ href, icon, label, gradient, hoverGradient }) => (
                   <a
