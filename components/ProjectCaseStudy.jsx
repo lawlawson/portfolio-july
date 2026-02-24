@@ -98,7 +98,7 @@ const ProjectCaseStudy = ({ projectId }) => {
               <li
                 key={index}
                 className='flex gap-4 text-gray-700 leading-relaxed'>
-                <span className='inline-block w-6 h-6 bg-[#901a1a] text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold'>
+                <span className='w-6 h-6 bg-[#901a1a] text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold'>
                   {index + 1}
                 </span>
                 <span>{challenge}</span>
