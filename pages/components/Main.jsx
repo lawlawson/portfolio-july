@@ -1,5 +1,7 @@
 import React from 'react';
+import Link from 'next/link';
 import { FaLinkedin, FaGithub, FaDev } from 'react-icons/fa';
+import { HiArrowDown } from 'react-icons/hi';
 
 const socialLinks = [
   {
@@ -49,15 +51,16 @@ const Main = () => {
           </p>
 
           {/* Social Media Icons */}
-          <div className='flex justify-center items-center space-x-4 md:space-x-6'>
-            {socialLinks.map(({ href, icon, label, gradient, hoverGradient }) => (
-              <a
-                key={label}
-                href={href}
-                target='_blank'
-                rel='noreferrer'
-                aria-label={label}
-                className={`
+          <div className='flex justify-center items-center space-x-4 md:space-x-6 mb-8'>
+            {socialLinks.map(
+              ({ href, icon, label, gradient, hoverGradient }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target='_blank'
+                  rel='noreferrer'
+                  aria-label={label}
+                  className={`
                   relative group
                   bg-gradient-to-br ${gradient} ${hoverGradient}
                   text-white p-5 rounded-full
@@ -70,11 +73,34 @@ const Main = () => {
                   ring-2 ring-transparent hover:ring-white/20
                   active:scale-95
                 `}>
-                <span className='relative z-10 transition-transform duration-300 group-hover:rotate-12'>
-                  {icon}
-                </span>
+                  <span className='relative z-10 transition-transform duration-300 group-hover:rotate-12'>
+                    {icon}
+                  </span>
+                </a>
+              ),
+            )}
+          </div>
+
+          {/* CTA Button */}
+          <div>
+            <Link href='/#featured'>
+              <a
+                className='
+                inline-flex items-center gap-2
+                bg-gradient-to-r from-[#901a1a] to-[#b02020]
+                hover:from-[#a02020] hover:to-[#c02828]
+                text-white font-semibold
+                px-8 py-4 rounded-full
+                transform transition-all duration-300 ease-out
+                hover:scale-105 hover:shadow-xl
+                active:scale-95
+                shadow-lg
+                group
+              '>
+                Featured Work
+                <HiArrowDown className='w-5 h-5 transition-transform duration-300 group-hover:translate-y-1' />
               </a>
-            ))}
+            </Link>
           </div>
         </div>
       </div>
