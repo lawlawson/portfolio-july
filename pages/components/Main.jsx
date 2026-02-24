@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { FaLinkedin, FaGithub, FaDev, FaXTwitter } from 'react-icons/fa6';
-import { HiArrowDown } from 'react-icons/hi';
+import { HiArrowDown, HiMail } from 'react-icons/hi';
 
 const socialLinks = [
   {
@@ -31,6 +31,13 @@ const socialLinks = [
     label: 'Dev.to',
     gradient: 'from-gray-800 to-gray-950',
     hoverGradient: 'hover:from-gray-900 hover:to-black',
+  },
+  {
+    href: 'mailto:narhlawson@gmail.com',
+    icon: <HiMail className='w-7 h-7' />,
+    label: 'Email',
+    gradient: 'from-[#901a1a] to-[#b02020]',
+    hoverGradient: 'hover:from-[#a02020] hover:to-[#c02828]',
   },
 ];
 
