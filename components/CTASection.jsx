@@ -1,4 +1,37 @@
 import React from 'react';
+import { FaLinkedin, FaGithub, FaXTwitter } from 'react-icons/fa6';
+import { HiMail } from 'react-icons/hi';
+
+const socialLinks = [
+  {
+    href: 'https://www.linkedin.com/in/lawlawson/',
+    icon: <FaLinkedin className='w-6 h-6' />,
+    label: 'LinkedIn',
+    gradient: 'from-blue-600 to-blue-800',
+    hoverGradient: 'hover:from-blue-700 hover:to-blue-900',
+  },
+  {
+    href: 'https://github.com/lawlawson',
+    icon: <FaGithub className='w-6 h-6' />,
+    label: 'GitHub',
+    gradient: 'from-gray-700 to-gray-900',
+    hoverGradient: 'hover:from-gray-800 hover:to-black',
+  },
+  {
+    href: 'https://x.com/lawsoncodes',
+    icon: <FaXTwitter className='w-6 h-6' />,
+    label: 'X (Twitter)',
+    gradient: 'from-slate-800 to-black',
+    hoverGradient: 'hover:from-slate-900 hover:to-black',
+  },
+  {
+    href: 'mailto:narhlawson@gmail.com',
+    icon: <HiMail className='w-6 h-6' />,
+    label: 'Email',
+    gradient: 'from-[#901a1a] to-[#b02020]',
+    hoverGradient: 'hover:from-[#a02020] hover:to-[#c02828]',
+  },
+];
 
 const CTASection = () => {
   return (
@@ -25,31 +58,37 @@ const CTASection = () => {
               .
             </p>
 
-            <div className='mt-10 flex flex-col sm:flex-row gap-4'>
-              <a
-                href='mailto:lawlawson@gmail.com'
-                className='inline-flex items-center justify-center rounded-lg bg-[#901a1a] px-7 py-3.5 text-sm font-semibold text-white shadow-lg transition duration-200 hover:bg-[#a01d1d] hover:shadow-2xl'>
-                Get In Touch
-              </a>
-              <a
-                href='https://www.linkedin.com/in/lawlawson/'
-                target='_blank'
-                rel='noopener noreferrer'
-                className='inline-flex items-center justify-center rounded-lg border-2 border-gray-600 px-7 py-3.5 text-sm font-semibold text-white transition duration-200 hover:border-[#901a1a] hover:bg-[#901a1a]/10 hover:text-[#ff6b6b]'>
-                LinkedIn
-              </a>
+            <div className='mt-10 flex items-center gap-4'>
+              {socialLinks.map(
+                ({ href, icon, label, gradient, hoverGradient }) => (
+                  <a
+                    key={label}
+                    href={href}
+                    {...(label !== 'Email' && {
+                      target: '_blank',
+                      rel: 'noopener noreferrer',
+                    })}
+                    aria-label={label}
+                    className={`
+                    relative group
+                    bg-gradient-to-br ${gradient} ${hoverGradient}
+                    text-white p-4 rounded-full
+                    transform transition-all duration-300 ease-out
+                    hover:scale-110 hover:-translate-y-1
+                    shadow-md hover:shadow-lg
+                    before:absolute before:inset-0 before:rounded-full
+                    before:bg-white before:opacity-0 hover:before:opacity-10
+                    before:transition-opacity before:duration-300
+                    ring-2 ring-transparent hover:ring-white/20
+                    active:scale-95
+                  `}>
+                    <span className='relative z-10 transition-transform duration-300 group-hover:rotate-12'>
+                      {icon}
+                    </span>
+                  </a>
+                ),
+              )}
             </div>
-
-            <p className='mt-6 text-sm text-gray-500'>
-              Or find me on{' '}
-              <a
-                href='https://github.com/lawlawson'
-                target='_blank'
-                rel='noopener noreferrer'
-                className='text-gray-300 hover:text-[#901a1a] transition duration-200'>
-                GitHub
-              </a>
-            </p>
           </div>
         </div>
       </div>
