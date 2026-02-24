@@ -4,18 +4,24 @@ import { FaLinkedin, FaGithub, FaDev } from 'react-icons/fa';
 const socialLinks = [
   {
     href: 'https://www.linkedin.com/in/lawlawson/',
-    icon: <FaLinkedin className='w-6 h-6' />,
+    icon: <FaLinkedin className='w-7 h-7' />,
     label: 'LinkedIn',
+    gradient: 'from-blue-600 to-blue-800',
+    hoverGradient: 'hover:from-blue-700 hover:to-blue-900',
   },
   {
     href: 'https://github.com/lawlawson',
-    icon: <FaGithub className='w-6 h-6' />,
+    icon: <FaGithub className='w-7 h-7' />,
     label: 'GitHub',
+    gradient: 'from-gray-700 to-gray-900',
+    hoverGradient: 'hover:from-gray-800 hover:to-black',
   },
   {
     href: 'https://dev.to/lawlawson',
-    icon: <FaDev className='w-6 h-6' />,
+    icon: <FaDev className='w-7 h-7' />,
     label: 'Dev.to',
+    gradient: 'from-gray-800 to-gray-950',
+    hoverGradient: 'hover:from-gray-900 hover:to-black',
   },
 ];
 
@@ -43,16 +49,30 @@ const Main = () => {
           </p>
 
           {/* Social Media Icons */}
-          <div className='flex justify-center items-center space-x-6'>
-            {socialLinks.map(({ href, icon, label }) => (
+          <div className='flex justify-center items-center space-x-4 md:space-x-6'>
+            {socialLinks.map(({ href, icon, label, gradient, hoverGradient }) => (
               <a
                 key={label}
                 href={href}
                 target='_blank'
                 rel='noreferrer'
                 aria-label={label}
-                className='bg-[#901a1a] text-white p-4 rounded-lg hover:scale-110 transition-transform duration-300 shadow-md'>
-                {icon}
+                className={`
+                  relative group
+                  bg-gradient-to-br ${gradient} ${hoverGradient}
+                  text-white p-5 rounded-full
+                  transform transition-all duration-300 ease-out
+                  hover:scale-110 hover:-translate-y-1
+                  shadow-md hover:shadow-lg
+                  before:absolute before:inset-0 before:rounded-full
+                  before:bg-white before:opacity-0 hover:before:opacity-10
+                  before:transition-opacity before:duration-300
+                  ring-2 ring-transparent hover:ring-white/20
+                  active:scale-95
+                `}>
+                <span className='relative z-10 transition-transform duration-300 group-hover:rotate-12'>
+                  {icon}
+                </span>
               </a>
             ))}
           </div>
