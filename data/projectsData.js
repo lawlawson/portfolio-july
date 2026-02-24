@@ -1,8 +1,46 @@
 import manage from '../public/assets/projects/manage.png';
 import preview from '../public/assets/projects/previewImg.png';
 import recipick from '../public/assets/projects/recipick.png';
+import interviewFlow from '../public/assets/projects/interview_flow.png';
 
 export const projectsData = [
+  {
+    id: 'interview-flow',
+    title: 'InterviewFlow',
+    description:
+      'A comprehensive AI-powered interview preparation platform that helps users practice role-specific technical interview questions with real-time guidance from Google Gemini.',
+    imageUrl: interviewFlow,
+    imageAlt:
+      'InterviewFlow platform showing interview practice session with questions and AI assistant',
+    url: 'https://interview-flow-sable.vercel.app/',
+    code: 'https://github.com/chingu-voyages/V59-tier2-team-22',
+    tools: [
+      'React',
+      'Vite',
+      'Tailwind CSS',
+      'Google Gemini API',
+      'React Router',
+    ],
+    caseStudy: {
+      overview:
+        'A full-featured interview preparation platform built collaboratively during Chingu Voyage 59 that provides role-based practice sessions, AI-powered hints, daily challenges, and comprehensive review of interview performance.',
+      challenges: [
+        'Integrating Google Gemini API for context-aware AI assistance without spoiling answers',
+        'Managing complex state for interview sessions, authentication, and chat history',
+        'Creating an intuitive multi-step interview flow with role selection and results review',
+        'Building an accessible, responsive experience across all devices',
+      ],
+      solutions: [
+        'Implemented React Context API for global state management of auth, interviews, and chat',
+        'Built dynamic system prompts for AI that provide hints using interview frameworks like STAR method',
+        'Created a modular component architecture with dedicated pages for each interview stage',
+        'Used Tailwind CSS utilities and mobile-first design for seamless responsiveness',
+        'Integrated localStorage for persistent authentication and session history',
+      ],
+      results:
+        'Deployed on Vercel with 20 randomized questions per session, real-time progress tracking, 3-session history storage, AI chatbot assistance, and daily challenges with full question reviews',
+    },
+  },
   {
     id: 'recipick',
     title: 'ReciPick',
