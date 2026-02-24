@@ -24,9 +24,9 @@ const About = () => {
           <p className='py-4 text-gray-600 max-w-[90%] m-auto text-xl leading-9 text-justify'>
             My main tools are HTML, CSS, JavaScript, React, and Tailwind CSS. I
             like using them to build real products like ReciPick (ingredient-led
-            recipe search), the Manage landing page, and my Markdown Previewer,
-            because each project teaches me something new about UI, performance,
-            and user flow.
+            recipe search), InterviewFlow (AI-powered interview prep), and my
+            Markdown Previewer, because each project teaches me something new
+            about UI, performance, and user flow.
           </p>
           <p className='py-4 text-gray-600 max-w-[90%] m-auto text-xl leading-9 text-justify'>
             I&apos;m always looking for the next project to build or improve,

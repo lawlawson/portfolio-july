@@ -1,4 +1,3 @@
-import manage from '../public/assets/projects/manage.png';
 import preview from '../public/assets/projects/previewImg.png';
 import recipick from '../public/assets/projects/recipick.png';
 import interviewFlow from '../public/assets/projects/interview_flow.png';
@@ -67,34 +66,6 @@ export const projectsData = [
       ],
       results:
         'Reduced API calls by 60%, improved page load time to under 2 seconds, achieved 92 Lighthouse accessibility score',
-    },
-  },
-  {
-    id: 'manage',
-    title: 'Manage Landing Page',
-    description:
-      'Landing page project is fully responsive and features a carousel using Swiper. I created this project primarily using Tailwind CSS. It is fully responsive and has some visual changes based on screen/device size.',
-    imageUrl: manage,
-    imageAlt:
-      'Manage landing page showing responsive design with hero section and feature carousel',
-    url: 'https://celebrated-biscochitos-f95934.netlify.app/',
-    code: 'https://github.com/lawlawson/manage-landing-page',
-    tools: ['HTML', 'Tailwind CSS', 'Swiper'],
-    caseStudy: {
-      overview:
-        'A responsive landing page showcasing a SaaS product with interactive carousel components.',
-      challenges: [
-        'Creating a responsive layout that works across all device sizes',
-        'Implementing a smooth carousel without compromising performance',
-        'Ensuring accessible keyboard navigation for the carousel',
-      ],
-      solutions: [
-        'Used Tailwind CSS utility classes for responsive design with mobile-first approach',
-        'Integrated Swiper library with ARIA attributes for accessible carousel',
-        'Optimized images with Next.js Image component',
-      ],
-      results:
-        'Achieved 98 Lighthouse performance score, 100% accessibility score, perfect Core Web Vitals across all devices',
     },
   },
   {
